@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AUREL Motion is a luxury watch maison homepage inspired by high-performance watchmaking, crafted as a fully responsive front-end assignment." />
+  <meta name="theme-color" content="#0b0d10" />
+  <title>AUREL Motion | Luxury Timepieces for the Fast Lane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-transition" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#hero" aria-label="AUREL Motion home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandMark" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f6e6bf" />
+                <stop offset="55%" stop-color="#c8a66a" />
+                <stop offset="100%" stop-color="#f2d8a0" />
+              </linearGradient>
+            </defs>
+            <rect x="6" y="6" width="52" height="52" rx="16" fill="none" stroke="url(#brandMark)" stroke-width="2.2" />
+            <path d="M20 42L32 18l12 24" fill="none" stroke="url(#brandMark)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M24 34h16" fill="none" stroke="url(#brandMark)" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>AUREL</strong>
+          <span>Motion House</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#collections">Collections</a>
+        <a href="#story">Brand Story</a>
+        <a href="#partners">Partners</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#news">Latest News</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" type="button" aria-label="Open search" data-search-toggle>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16.2 16.2L20 20"></path>
+          </svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Toggle theme" data-theme-toggle>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <path d="M12 1.8v3.2M12 19v3.2M4.3 4.3l2.2 2.2M17.5 17.5l2.2 2.2M1.8 12h3.2M19 12h3.2M4.3 19.7l2.2-2.2M17.5 6.5l2.2-2.2"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.6 15.8A8.2 8.2 0 1 1 8.2 6.4a7 7 0 0 0 9.4 9.4Z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn icon-btn--menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#collections">Collections</a>
+      <a href="#story">Brand Story</a>
+      <a href="#partners">Partners</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#news">Latest News</a>
+    </div>
+  </header>
+
+  <div class="search-panel" data-search-panel hidden>
+    <div class="search-panel__backdrop" data-search-close></div>
+    <div class="search-panel__dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+      <p class="eyebrow">Search the house</p>
+      <h2 id="search-title">Find collections, partners, and stories</h2>
+      <label class="search-field">
+        <span class="sr-only">Search</span>
+        <input type="search" placeholder="Search timepieces, ambassadors, or news" />
+      </label>
+      <div class="search-panel__links">
+        <a href="#collections">Collections</a>
+        <a href="#partners">Athletes</a>
+        <a href="#showcase">Limited editions</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero section-surface" id="hero">
+      <div class="hero__bg hero__bg--pattern" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1800&q=80" alt="" />
+      </div>
+      <div class="hero__lights" aria-hidden="true"></div>
+      <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=1800&q=80" aria-hidden="true">
+        <source src="https://www.pexels.com/download/video/6827122/" type="video/mp4" />
+      </video>
+      <div class="hero__bg hero__bg--glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Luxury engineered for motion</p>
+          <h1 class="hero__title reveal">Timepieces built like racing machines.</h1>
+          <p class="hero__lead reveal">A fictional high-horology maison inspired by the discipline, elegance, and performance language of elite watchmaking.</p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#showcase">Explore the showcase</a>
+            <a class="btn btn--ghost" href="#story">Discover the house</a>
+          </div>
+          <ul class="hero__facts reveal" aria-label="Highlights">
+            <li><strong>01</strong><span>Carbon-titanium architecture</span></li>
+            <li><strong>02</strong><span>Hand-finished micro details</span></li>
+            <li><strong>03</strong><span>Ultra-light performance design</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-parallax data-parallax-speed="0.25">
+          <div class="hero__ring hero__ring--one"></div>
+          <div class="hero__ring hero__ring--two"></div>
+          <figure class="hero-watch">
+            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1400&q=80" alt="Luxury performance watch" />
+          </figure>
+          <div class="hero__badge">
+            <span>New release</span>
+            <strong>RM-01 Inspired Motion Series</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Collection</p>
+          <h2>Precision silhouettes. Elevated finishes.</h2>
+          <p>Three to six statement models shaped by technical geometry, tactile materials, and an athletic spirit.</p>
+        </div>
+        <div class="card-grid collections__grid" data-collection-grid></div>
+      </div>
+    </section>
+
+    <section class="section brand-story" id="story">
+      <div class="container brand-story__grid">
+        <div class="brand-story__media reveal" data-parallax data-parallax-speed="0.14">
+          <div class="brand-story__frame"></div>
+          <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1400&q=80" alt="Conceptual luxury timepiece" loading="lazy" />
+        </div>
+        <div class="brand-story__content">
+          <p class="eyebrow reveal">Brand story</p>
+          <h2 class="reveal">A modern watch house built around speed, craft, and clarity.</h2>
+          <p class="reveal">AUREL Motion pairs sculptural watch cases with lightweight engineering, premium finishing, and a visual language inspired by the paddock, the atelier, and the open road.</p>
+
+          <div class="stats" aria-label="Brand statistics">
+            <article class="stat reveal">
+              <strong data-count="18">0</strong>
+              <span>Signature components</span>
+            </article>
+            <article class="stat reveal">
+              <strong data-count="42">0</strong>
+              <span>Hours of finishing</span>
+            </article>
+            <article class="stat reveal">
+              <strong data-count="96">0</strong>
+              <span>Performance tests</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners" id="partners">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured partners</p>
+          <h2>Athletes and houses that move with purpose.</h2>
+          <p>Ambassadors and collaborators who reflect the same blend of discipline, charisma, and technical edge.</p>
+        </div>
+        <div class="card-grid partners__grid" data-partner-grid></div>
+      </div>
+    </section>
+
+    <section class="section showcase" id="showcase">
+      <div class="container showcase__grid">
+        <div class="showcase__viewer reveal">
+          <div class="showcase__stage">
+            <div class="showcase__track" data-showcase-track></div>
+          </div>
+          <div class="showcase__controls">
+            <button class="control-btn" type="button" data-showcase-prev aria-label="Previous watch">
+              <span>Prev</span>
+            </button>
+            <button class="control-btn" type="button" data-showcase-next aria-label="Next watch">
+              <span>Next</span>
+            </button>
+          </div>
+          <div class="showcase__dots" data-showcase-dots aria-label="Product navigation"></div>
+        </div>
+
+        <div class="showcase__details">
+          <p class="eyebrow reveal">Watch showcase</p>
+          <h2 class="reveal">Explore the signature piece from every angle.</h2>
+          <p class="reveal">Swipe through the collection, study the finishing, and rotate the hero watch with the 360° viewer for a closer look at the architecture.</p>
+          <ul class="spec-list reveal">
+            <li><span>Case</span><strong>Titanium and forged carbon composite</strong></li>
+            <li><span>Dial</span><strong>Open-worked skeleton construction</strong></li>
+            <li><span>Movement</span><strong>Automatic high-precision calibre</strong></li>
+            <li><span>Water resistance</span><strong>Up to 50 meters</strong></li>
+          </ul>
+          <div class="viewer-360 reveal">
+            <div class="viewer-360__head">
+              <span>360° viewer</span>
+              <strong>Drag to rotate the watch</strong>
+            </div>
+            <label class="viewer-360__slider">
+              <span class="sr-only">Rotate watch</span>
+              <input type="range" min="0" max="360" value="24" data-spin-range />
+            </label>
+            <div class="viewer-360__display" data-spin-display>
+              <img src="assets/watch-hero.svg" alt="Rotatable watch view" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news" id="news">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Latest news</p>
+          <h2>Stories from the atelier and the track.</h2>
+          <p>Short editorial notes and product updates with strong visual cards and clear dates.</p>
+        </div>
+        <div class="card-grid news__grid" data-news-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand reveal">
+        <a class="brand brand--footer" href="#hero" aria-label="AUREL Motion home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="6" y="6" width="52" height="52" rx="16" fill="none" stroke="currentColor" stroke-width="2.2" />
+              <path d="M20 42L32 18l12 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M24 34h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <strong>AUREL</strong>
+            <span>Motion House</span>
+          </span>
+        </a>
+        <p>Luxury watchmaking inspired by the performance mindset of elite motorsport and contemporary design.</p>
+      </div>
+
+      <div class="footer__links reveal">
+        <h3>Company</h3>
+        <a href="#story">About</a>
+        <a href="#partners">Ambassadors</a>
+        <a href="#news">Journal</a>
+        <a href="#hero">Contact</a>
+      </div>
+
+      <div class="footer__links reveal">
+        <h3>Collections</h3>
+        <a href="#collections">Apex One</a>
+        <a href="#collections">Stratos 8</a>
+        <a href="#collections">Noir Ultra</a>
+        <a href="#showcase">Limited Editions</a>
+      </div>
+
+      <div class="footer__links reveal">
+        <h3>Social</h3>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noreferrer">Pinterest</a>
+      </div>
+
+      <form class="footer__newsletter reveal" data-newsletter-form>
+        <h3>Newsletter</h3>
+        <p>Monthly product drops, editorial features, and house updates.</p>
+        <label>
+          <span class="sr-only">Email address</span>
+          <input type="email" placeholder="Email address" required />
+        </label>
+        <button class="btn btn--primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="container footer__bar">
+      <p>© 2026 AUREL Motion. Concept homepage for internship submission.</p>
+      <p>Inspired by the visual language of high-performance horology.</p>
+    </div>
+  </footer>
+</body>
+</html>

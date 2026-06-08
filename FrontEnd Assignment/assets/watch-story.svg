@@ -1,0 +1,43 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="storyGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 590) rotate(90) scale(420)">
+      <stop stop-color="#D7B37A" stop-opacity="0.22"/>
+      <stop offset="0.62" stop-color="#D7B37A" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#07090C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="storyCase" x1="400" y1="320" x2="800" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E2B7"/>
+      <stop offset="0.45" stop-color="#C69B61"/>
+      <stop offset="1" stop-color="#7F5731"/>
+    </linearGradient>
+    <linearGradient id="storyStrap" x1="520" y1="160" x2="680" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1115"/>
+      <stop offset="0.52" stop-color="#262A31"/>
+      <stop offset="1" stop-color="#090B0E"/>
+    </linearGradient>
+    <linearGradient id="storyDial" x1="500" y1="450" x2="700" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1F26"/>
+      <stop offset="1" stop-color="#07090C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#storyGlow)"/>
+  <g opacity="0.95">
+    <rect x="520" y="120" width="160" height="180" rx="38" fill="url(#storyStrap)"/>
+    <rect x="520" y="900" width="160" height="180" rx="38" fill="url(#storyStrap)"/>
+    <rect x="462" y="300" width="276" height="600" rx="112" fill="url(#storyCase)"/>
+    <rect x="488" y="328" width="224" height="544" rx="96" fill="#14181E"/>
+    <rect x="514" y="354" width="172" height="492" rx="80" fill="url(#storyDial)"/>
+    <circle cx="600" cy="600" r="132" stroke="#D7B37A" stroke-opacity="0.24" stroke-width="2"/>
+    <circle cx="600" cy="600" r="100" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1.5"/>
+    <path d="M600 510V600L652 656" stroke="#F4E2B7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M600 600L555 570" stroke="#F4E2B7" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="600" cy="600" r="9" fill="#F4E2B7"/>
+    <path d="M600 472V452M600 748V728M472 600H452M748 600H728" stroke="#F4E2B7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="556" y="250" width="88" height="28" rx="14" fill="#AA7E45"/>
+    <rect x="556" y="922" width="88" height="28" rx="14" fill="#AA7E45"/>
+    <rect x="672" y="450" width="30" height="32" rx="12" fill="#D7B37A"/>
+    <path d="M528 506C566 475 634 470 672 500" stroke="#FFFFFF" stroke-opacity="0.13" stroke-width="5" stroke-linecap="round"/>
+    <path d="M532 766C582 792 624 794 668 768" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="5" stroke-linecap="round"/>
+    <path d="M538 570L662 646" stroke="#D7B37A" stroke-opacity="0.16" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
